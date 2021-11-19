@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+           <div class="box-mini">
+               <h2>My Music</h2>
+               <div class="music-img">
+                <img src="./Images/shiddat.jpg" id="m-image" alt="">
+               </div>
+               <div class="title"> 
+                    <h3 class="center music-name">Music Name</h3>
+                    <h4 class="center artist-name">Artist</h4>
+               </div>
+               
+               <div class="player-progress">
+                   <audio id="main-music" src=""></audio>
+                   <div class="player-bar"></div>
+               </div>
+               <div class="song-timer">
+                <span class="current-time">0:00</span>
+                <span class="max-duration">0:00</span>
+              </div>
+               <div class="components">
+                   <div class="back item "><i class="fas fa-step-backward back-btn"></i></div>
+                   <div class="pause item"><i id="play-btn" class="fas fa-play play-btn"></i></div>
+                   <div class="next item"><i class="fas fa-step-forward next-btn"></i></div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
